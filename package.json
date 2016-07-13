@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/forente/AngularJS-Express-JSON#readme",
   "dependencies": {
+    "angular": "^1.5.7",
     "express": "^4.14.0"
   }
 }
