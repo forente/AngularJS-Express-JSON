@@ -33,7 +33,7 @@ var fencing =[{  Name: 'Miles Chamley-Watson ',  Origin: 'New York, N.Y. '},
                {  Name: 'Dagmara Wozniak',  Origin: 'Avenel, N.J. '},
                {  Name: 'Mariel Zagunis',  Origin: 'Beaverton, Ore.'}];
 
-  var wresting =[{  Name: 'Haley Augello ',  Origin: 'Lockport, Ill. '},
+  var wrestling =[{  Name: 'Haley Augello ',  Origin: 'Lockport, Ill. '},
                 {  Name: 'Andy Bisek',  Origin: 'Chaska, Minn.  '},
                 {  Name: 'Jordan Burroughs',  Origin: 'Sicklerville, N.J.'},
                 {  Name: 'J\'den Cox',  Origin: 'Columbia, Mo. '},
@@ -68,15 +68,15 @@ router.get('/judo', function(request,responce){
 });
 
 router.get('/fencing', function(request,responce){
-  responce.send("fencing");
+  responce.send(fencing[randomIndex(fencing.length)]);
 });
 
 router.get('/taekwondo', function(request,responce){
-  responce.send("taekwondo");
+  responce.send(t[randomIndex(t.length)]);
 });
 
 router.get('/wrestling', function(request,responce){
-  responce.send("wrestling");
+  responce.send(wrestling[randomIndex(wrestling.length)]);
 });
 
 
